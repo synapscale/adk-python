@@ -151,7 +151,46 @@ coordinator = SequentialAgent(
 2. **Configure suas APIs** no arquivo `.env`
 3. **Teste os exemplos**: `python examples/multi_model_examples.py`
 4. **Explore o guia completo**: [`docs/ADK_LITELLM_GUIDE.md`](docs/ADK_LITELLM_GUIDE.md)
-5. **Crie seus próprios agentes** usando os templates fornecidos
+5. **🌐 Use a interface web visual**: `adk web .` → `http://localhost:8000`
+6. **Crie seus próprios agentes** usando os templates fornecidos
+
+## 🌐 Interface Web Visual - NOVA DESCOBERTA!
+
+O Google ADK possui uma **interface web visual moderna** integrada! Não é necessário instalar ferramentas externas.
+
+### 🎯 Recursos da Interface Web
+- **🎨 Interface Angular moderna** com Material Design
+- **💬 Chat interativo** em tempo real com WebSocket
+- **🎤 Processamento de áudio** e síntese de voz
+- **🔧 Debug avançado** com visualização de agentes
+- **📊 Monitoramento** de performance e métricas
+- **🌍 Suporte multi-sessão** com persistência
+
+### 🚀 Como Usar a Interface Visual
+```bash
+# 1. Configure sua API key
+export OPENAI_API_KEY="sua_chave_aqui"
+
+# 2. Inicie a interface web (já configurada!)
+adk web .
+
+# 3. Acesse no navegador
+# http://localhost:8000
+```
+
+### 📁 Arquivos da Interface Web
+- **[`INTERFACE_WEB_VISUAL.md`](INTERFACE_WEB_VISUAL.md)** - Guia completo da interface
+- **[`agent.py`](agent.py)** - Agente pré-configurado para a interface
+- **[`__init__.py`](__init__.py)** - Módulo Python necessário  
+- **[`demo_web_ui.py`](demo_web_ui.py)** - Script de demonstração
+- **[`mostrar_interface.py`](mostrar_interface.py)** - Verificação e instruções
+
+### 🎨 Componentes da Interface
+- **Frontend Angular** com componentes Material Design
+- **Audio Processor** para processamento de voz em tempo real
+- **FastAPI Backend** com documentação automática
+- **WebSocket** para comunicação bidirecional
+- **Sessões SQLite** para persistência de dados
 
 ---
 
