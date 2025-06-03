@@ -1,0 +1,25 @@
+# Google ADK + LiteLLM Tutorial Requirements
+# Este arquivo contém as dependências mínimas necessárias para o tutorial
+
+# Core dependencies
+google-adk>=1.0.0
+litellm>=1.0.0
+python-dotenv>=1.0.0
+
+# Optional dependencies for enhanced functionality
+pydantic>=2.0.0
+asyncio-mqtt>=0.11.0
+
+# Development and testing (optional)
+jupyter>=1.0.0
+notebook>=6.0.0
+ipykernel>=6.0.0
+
+# For specific model providers (install only what you need):
+# openai>=1.0.0          # For OpenAI models
+# anthropic>=0.25.0      # For Anthropic models
+# google-cloud-aiplatform>=1.95.0  # For Vertex AI models
+# cohere>=4.0.0          # For Cohere models
+
+# Note: LiteLLM will automatically install provider-specific dependencies
+# when you first use a model from that provider
