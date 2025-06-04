@@ -83,8 +83,7 @@ make install-dev
 
 # Or manual setup
 pip install -e .
-pip install -r config/requirements-tutorial.txt
-export PYTHONPATH="$(pwd)/src:$PYTHONPATH"
+pip install -r config/requirements-tutorial.txtonfig/requirements-tutorial.txt
 ```
 
 The release cadence is weekly.
