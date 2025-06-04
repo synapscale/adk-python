@@ -47,14 +47,50 @@ For remote agent-to-agent communication, ADK integrates with the
 See this [example](https://github.com/google-a2a/a2a-samples/tree/main/samples/python/agents/google_adk)
 for how they can work together.
 
-## 🚀 Installation
+## 🚀 Quick Start
 
-### Stable Release (Recommended)
+### Para Usuários Brasileiros / Portuguese Users
+
+Este repositório foi reorganizado com tutoriais em português! 🇧🇷
+
+**Instalação Rápida:**
+```bash
+# Clone o repositório
+git clone https://github.com/google/adk-python.git
+cd adk-python
+
+# Execute o script de configuração
+./scripts/setup.sh
+
+# Configure o ambiente
+source .env.local
+
+# Execute uma demonstração
+make demo
+```
+
+### Installation
+
+#### Stable Release (Recommended)
 
 You can install the latest stable version of ADK using `pip`:
 
 ```bash
 pip install google-adk
+```
+
+#### Development Setup
+
+For development and tutorials:
+
+```bash
+# Quick setup
+make install-dev
+
+# Or manual setup
+pip install -e .
+pip install -r config/requirements-tutorial.txt
+export PYTHONPATH="$(pwd)/src:$PYTHONPATH"
 ```
 
 The release cadence is weekly.
@@ -137,10 +173,44 @@ We welcome contributions from the community! Whether it's bug reports, feature r
 - [General contribution guideline and flow](https://google.github.io/adk-docs/contributing-guide/#questions).
 - Then if you want to contribute code, please read [Code Contributing Guidelines](./CONTRIBUTING.md) to get started.
 
+## 📁 Repository Structure
+
+This repository has been reorganized for better development experience:
+
+```
+adk-python/
+├── 📁 src/google/adk/        # Core ADK source code
+├── 📁 tutorials/             # Brazilian Portuguese tutorials
+│   ├── demos/                # Practical demonstrations
+│   ├── notebooks/            # Jupyter notebooks
+│   └── docs/                 # Documentation in Portuguese
+├── 📁 tests/                 # Automated tests
+├── 📁 examples/              # Official examples
+├── 📁 scripts/               # Development utilities
+├── 📁 config/                # Configuration files
+└── 📁 .vscode/               # VS Code settings
+```
+
+**Quick Commands:**
+- `make help` - Show all available commands
+- `make demo` - Run practical demonstration
+- `make test` - Run all tests
+- `make format` - Format code
+- `make notebook` - Open Jupyter notebooks
+
+See [ESTRUTURA.md](ESTRUTURA.md) for detailed organization info.
+
+## 🇧🇷 Tutoriais em Português
+
+- **[Demonstração Prática](tutorials/demos/demonstracao_pratica.py)** - Como usar o ADK na prática
+- **[Guia Completo](tutorials/docs/GUIA_PRATICO_USO.md)** - Guia completo de uso
+- **[Notebook Tutorial](tutorials/notebooks/ADK_LiteLLM_Tutorial.ipynb)** - Tutorial interativo
+- **[Interface Web](tutorials/demos/demo_web_ui.py)** - Demonstração com interface web
+
 ## 📄 License
 
 This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-*Happy Agent Building!*
+*Happy Agent Building! 🤖*
