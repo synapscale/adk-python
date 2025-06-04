@@ -4,24 +4,17 @@
 [![Python Unit Tests](https://github.com/google/adk-python/actions/workflows/python-unit-tests.yml/badge.svg)](https://github.com/google/adk-python/actions/workflows/python-unit-tests.yml)
 [![r/agentdevelopmentkit](https://img.shields.io/badge/Reddit-r%2Fagentdevelopmentkit-FF4500?style=flat&logo=reddit&logoColor=white)](https://www.reddit.com/r/agentdevelopmentkit/)
 
-<html>
-    <h2 align="center">
-      <img src="https://raw.githubusercontent.com/google/adk-python/main/assets/agent-development-kit.png" width="256"/>
-    </h2>
-    <h3 align="center">
-      An open-source, code-first Python toolkit for building, evaluating, and deploying sophisticated AI agents with flexibility and control.
-    </h3>
-    <h3 align="center">
-      Important Links:
-      <a href="https://google.github.io/adk-docs/">Docs</a>, 
-      <a href="https://github.com/google/adk-samples">Samples</a>,
-      <a href="https://github.com/google/adk-java">Java ADK</a> &
-      <a href="https://github.com/google/adk-web">ADK Web</a>.
-    </h3>
-</html>
+![Agent Development Kit](https://raw.githubusercontent.com/google/adk-python/main/assets/agent-development-kit.png)
+
+**An open-source, code-first Python toolkit for building, evaluating, and deploying sophisticated AI agents with flexibility and control.**
+
+**Important Links:**
+[Docs](https://google.github.io/adk-docs/) |
+[Samples](https://github.com/google/adk-samples) |
+[Java ADK](https://github.com/google/adk-java) |
+[ADK Web](https://github.com/google/adk-web)
 
 Agent Development Kit (ADK) is a flexible and modular framework for developing and deploying AI agents. While optimized for Gemini and the Google ecosystem, ADK is model-agnostic, deployment-agnostic, and is built for compatibility with other frameworks. ADK was designed to make agent development feel more like software development, to make it easier for developers to create, deploy, and orchestrate agentic architectures that range from simple tasks to complex workflows.
-
 
 ---
 
@@ -54,6 +47,7 @@ for how they can work together.
 Este repositório foi reorganizado com tutoriais em português! 🇧🇷
 
 **Instalação Rápida:**
+
 ```bash
 # Clone o repositório
 git clone https://github.com/google/adk-python.git
@@ -98,6 +92,7 @@ The release cadence is weekly.
 This version is recommended for most users as it represents the most recent official release.
 
 ### Development Version
+
 Bug fixes and new features are merged into the main branch on GitHub first. If you need access to changes that haven't been included in an official PyPI release yet, you can install directly from the main branch:
 
 ```bash
@@ -111,11 +106,11 @@ Note: The development version is built directly from the latest code commits. Wh
 Explore the full documentation for detailed guides on building, evaluating, and
 deploying agents:
 
-* **[Documentation](https://google.github.io/adk-docs)**
+- **[Documentation](https://google.github.io/adk-docs)**
 
 ## 🏁 Feature Highlight
 
-### Define a single agent:
+### Define a single agent
 
 ```python
 from google.adk.agents import Agent
@@ -130,7 +125,7 @@ root_agent = Agent(
 )
 ```
 
-### Define a multi-agent system:
+### Define a multi-agent system
 
 Define a multi-agent system with coordinator agent, greeter agent, and task execution agent. Then ADK engine and the model will guide the agents works together to accomplish the task.
 
@@ -157,9 +152,9 @@ coordinator = LlmAgent(
 
 A built-in development UI to help you test, evaluate, debug, and showcase your agent(s).
 
-<img src="https://raw.githubusercontent.com/google/adk-python/main/assets/adk-web-dev-ui-function-call.png"/>
+![ADK Web Development UI Function Call](https://raw.githubusercontent.com/google/adk-python/main/assets/adk-web-dev-ui-function-call.png)
 
-###  Evaluate Agents
+### Evaluate Agents
 
 ```bash
 adk eval \
@@ -170,6 +165,7 @@ adk eval \
 ## 🤝 Contributing
 
 We welcome contributions from the community! Whether it's bug reports, feature requests, documentation improvements, or code contributions, please see our
+
 - [General contribution guideline and flow](https://google.github.io/adk-docs/contributing-guide/#questions).
 - Then if you want to contribute code, please read [Code Contributing Guidelines](./CONTRIBUTING.md) to get started.
 
@@ -177,7 +173,7 @@ We welcome contributions from the community! Whether it's bug reports, feature r
 
 This repository has been reorganized for better development experience:
 
-```
+```text
 adk-python/
 ├── 📁 src/google/adk/        # Core ADK source code
 ├── 📁 tutorials/             # Brazilian Portuguese tutorials
@@ -192,6 +188,7 @@ adk-python/
 ```
 
 **Quick Commands:**
+
 - `make help` - Show all available commands
 - `make demo` - Run practical demonstration
 - `make test` - Run all tests
@@ -213,4 +210,4 @@ This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENS
 
 ---
 
-*Happy Agent Building! 🤖*
+Happy Agent Building! 🤖

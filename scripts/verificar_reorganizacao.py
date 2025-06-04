@@ -79,10 +79,10 @@ def verificar_imports():
         try:
             __import__(modulo)
             print(f"✅ {modulo} importado com sucesso")
-        except ImportError as e:
+        except (ModuleNotFoundError, ImportError) as e:
             print(f"❌ Erro ao importar {modulo}: {e}")
             sucesso = False
-        except Exception as e:
+        except AttributeError as e:
             print(f"⚠️  Aviso ao importar {modulo}: {e}")
 
     return sucesso
